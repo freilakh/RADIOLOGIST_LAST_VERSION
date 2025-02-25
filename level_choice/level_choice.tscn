@@ -1,0 +1,76 @@
+[gd_scene load_steps=3 format=3 uid="uid://80g34o1el0uh"]
+
+[ext_resource type="Script" path="res://level_choice/level_choice.gd" id="1_csvft"]
+[ext_resource type="Texture2D" uid="uid://24hwjwscr1sn" path="res://option menu/5454080627780478831 (1).jpg" id="1_lmgmd"]
+
+[node name="level_choice" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_csvft")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lmgmd")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 64
+text = "ВЫБЕРИТЕ ИГРОВОЙ КЕЙС"
+
+[node name="HSeparator" type="HSeparator" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+
+[node name="1_level" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "ВВОДНЫЙ УРОК"
+
+[node name="HSeparator2" type="HSeparator" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+
+[node name="2_level" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "Т1 И Т2 РАЗРЕШЕНИЕ"
+
+[node name="HSeparator3" type="HSeparator" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+
+[node name="exit" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 24
+text = "НАЗАД"
