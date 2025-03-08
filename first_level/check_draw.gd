@@ -31,13 +31,13 @@ func check_result(c_pos : Array):
 		return [-1]
 	else:
 		for elem in c_pos:
-			if elem.x<430:
+			if elem.x<1500:
 				m1=true
-			if elem.x>585:
+			if elem.x>1580:
 				m2=true
-			if elem.y<342:
+			if elem.y<260:
 				m3=true
-			if elem.y>462:
+			if elem.y>340:
 				m4=true
 			distances.append(elem.distance_to(draw_zone.answer))
 	return distances

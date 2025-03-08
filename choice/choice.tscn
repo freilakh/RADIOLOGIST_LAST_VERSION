@@ -1,0 +1,178 @@
+[gd_scene load_steps=2 format=3 uid="uid://pkcd302nwjj8"]
+
+[ext_resource type="Script" path="res://choice/choice.gd" id="1_eeqx6"]
+
+[node name="choiceTab" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eeqx6")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 1
+current_tab = 2
+
+[node name="ВВОДНЫЙ БЛОК" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+tab_alignment = 1
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="TabContainer/ВВОДНЫЙ БЛОК"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="theory_container" type="HBoxContainer" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="theoria_0" type="Button" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/theory_container"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "ТЕОРИЯ"
+
+[node name="VSeparator3" type="VSeparator" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/theory_container"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="status_theory" type="Label" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/theory_container"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "СТАТУС"
+
+[node name="1_level_container" type="HBoxContainer" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="1_case" type="Button" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/1_level_container"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 36
+text = "ПЕРВЫЙ КЕЙС"
+
+[node name="VSeparator2" type="VSeparator" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/1_level_container"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="points" type="Label" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/1_level_container"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "БАЛЛЫ"
+
+[node name="VSeparator" type="VSeparator" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/1_level_container"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="status" type="Label" parent="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/1_level_container"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "СТАТУС"
+
+[node name="БЛОК 1" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+tab_alignment = 1
+metadata/_tab_index = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="TabContainer/БЛОК 1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="theory_container1" type="HBoxContainer" parent="TabContainer/БЛОК 1/MarginContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="theoria_1" type="Button" parent="TabContainer/БЛОК 1/MarginContainer2/theory_container1"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "ТЕОРИЯ"
+
+[node name="VSeparator3" type="VSeparator" parent="TabContainer/БЛОК 1/MarginContainer2/theory_container1"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="status_theory_1" type="Label" parent="TabContainer/БЛОК 1/MarginContainer2/theory_container1"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "СТАТУС"
+
+[node name="БЛОК 2" type="TabBar" parent="TabContainer"]
+layout_mode = 2
+tab_alignment = 1
+metadata/_tab_index = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="TabContainer/БЛОК 2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="theory_container2" type="HBoxContainer" parent="TabContainer/БЛОК 2/MarginContainer3"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="theoria_2" type="Button" parent="TabContainer/БЛОК 2/MarginContainer3/theory_container2"]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "ТЕОРИЯ"
+
+[node name="VSeparator3" type="VSeparator" parent="TabContainer/БЛОК 2/MarginContainer3/theory_container2"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="status_theory_2" type="Label" parent="TabContainer/БЛОК 2/MarginContainer3/theory_container2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "СТАТУС"
+
+[connection signal="button_down" from="TabContainer/ВВОДНЫЙ БЛОК/MarginContainer/1_level_container/1_case" to="." method="_on__case_button_down"]
