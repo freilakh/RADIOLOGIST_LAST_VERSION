@@ -1,15 +1,12 @@
-[gd_scene load_steps=22 format=3 uid="uid://dcs2kd44lteax"]
+[gd_scene load_steps=20 format=3 uid="uid://dcs2kd44lteax"]
 
 [ext_resource type="Texture2D" uid="uid://dawvgpxf3cjov" path="res://first_level/5224721342585235115.jpg" id="1_4frlr"]
 [ext_resource type="Script" path="res://first_level/first_level.gd" id="1_g1d70"]
 [ext_resource type="Script" path="res://first_level/drawing_zone.gd" id="2_qn03v"]
 [ext_resource type="Texture2D" uid="uid://eaiy5i8hdhcc" path="res://first_level/5224721342585235249.jpg" id="2_tlrn8"]
 [ext_resource type="Texture2D" uid="uid://cs6cnxfreui0f" path="res://first_level/Без названия39_20241009154024 (1).png" id="3_4vddj"]
-[ext_resource type="Texture2D" uid="uid://0cdyvem7ovrc" path="res://first_level/IMG_1280.png" id="3_hx3bk"]
 [ext_resource type="Texture2D" uid="uid://dewcsf8csqm75" path="res://first_level/IMG_1870.PNG" id="4_dmul0"]
-[ext_resource type="Texture2D" uid="uid://bdvugtfrt7c6w" path="res://first_level/Снимок экрана 2024-09-26 213251.png" id="5_no76g"]
 [ext_resource type="Texture2D" uid="uid://ye07m14wig8e" path="res://first_level/Без названия39_20241025223214.png" id="6_3ncdp"]
-[ext_resource type="Texture2D" uid="uid://cvxxfhmif533h" path="res://first_level/танк.png" id="8_j32ck"]
 [ext_resource type="Script" path="res://first_level/медуза.gd" id="9_adp38"]
 [ext_resource type="Texture2D" uid="uid://bs88by3x86cvj" path="res://first_level/третье сообщение.png" id="10_7b7jb"]
 [ext_resource type="Script" path="res://first_level/clear_draw.gd" id="10_bfn0p"]
@@ -19,6 +16,7 @@
 [ext_resource type="AudioStream" uid="uid://bm3y66gm5ridl" path="res://first_level/Sound-1.ogg" id="13_0wj51"]
 [ext_resource type="AudioStream" uid="uid://devavidb7o3kk" path="res://first_level/Sound 2.mp3" id="14_dp0e1"]
 [ext_resource type="AudioStream" uid="uid://gxrbqampju0p" path="res://first_level/Sound 3.mp3" id="15_15v6w"]
+[ext_resource type="Texture2D" uid="uid://ce8ui3eby1un" path="res://first_level/frontal-meningioma-1.png" id="16_8wjf4"]
 [ext_resource type="Texture2D" uid="uid://dll5jj6sd1svs" path="res://first_level/Без названия39_20250221124939.png" id="16_fhit1"]
 [ext_resource type="Texture2D" uid="uid://n8q3gl2hpr7u" path="res://first_level/Без названия39_20250221131908.png" id="17_8ugt2"]
 
@@ -78,22 +76,6 @@ texture_pressed = ExtResource("6_3ncdp")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="значок_танка" type="TextureButton" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/PanelContainer/нижняя панель"]
-visible = false
-anchors_preset = -1
-anchor_left = 0.48
-anchor_top = 0.92
-anchor_right = 0.565
-anchor_bottom = 0.998
-offset_left = -327.24
-offset_top = -74.76
-offset_right = -326.595
-offset_bottom = -29.894
-texture_normal = ExtResource("3_hx3bk")
-texture_pressed = ExtResource("8_j32ck")
-ignore_texture_size = true
-stretch_mode = 0
-
 [node name="Control" type="Control" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 layout_mode = 2
 
@@ -142,9 +124,10 @@ theme_override_colors/font_hovered_color = Color(1, 1, 1, 1)
 theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
 theme_override_colors/drop_mark_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 28
-current_tab = 0
+current_tab = 1
 
-[node name="информация о пациенте" type="TabBar" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer"]
+[node name="пациент" type="TabBar" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer"]
+visible = false
 layout_mode = 2
 tooltip_text = "ПОЛ:
 
@@ -160,10 +143,58 @@ tabs_rearrange_group = 0
 scroll_to_selected = false
 metadata/_tab_index = 0
 
-[node name="настройки" type="TabBar" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer"]
-visible = false
+[node name="information" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/пациент"]
+layout_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 1.0
+theme_override_font_sizes/font_size = 30
+text = "  ПОЛ: МУЖСКОЙ
+
+  ВОЗРАСТ: 45 ЛЕТ
+
+  НАЛИЧИЕ 
+  ХРОНИЧЕСКИХ 
+  ЗАБОЛЕВАНИЙ: НЕТ
+
+  ЖАЛОБЫ: РВОТА И 
+  ГОЛОВНАЯ БОЛЬ
+
+  НАЛИЧИЕ ВРЕДНЫХ 
+  ПРИВЫЧЕК: НЕТ"
+
+[node name="описание" type="TabBar" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer"]
 layout_mode = 2
 metadata/_tab_index = 1
+
+[node name="menu" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/описание"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "МЕНЮ"
+
+[node name="pause" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/описание"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -161.0
+offset_right = 1.0
+offset_bottom = -86.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "ПАУЗА"
 
 [node name="верхняя_панель" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 position = Vector2(990.5, 541.5)
@@ -197,13 +228,15 @@ offset_top = 0.47998
 offset_right = 9.46002
 offset_bottom = 4.15991
 theme_override_font_sizes/font_size = 42
+placeholder_text = "введи ответ"
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-position = Vector2(1506, 516)
-scale = Vector2(3.01419, 2.9679)
-texture = ExtResource("5_no76g")
+position = Vector2(1158, 128)
+scale = Vector2(1.39453, 1.50977)
+texture = ExtResource("16_8wjf4")
+centered = false
 
 [node name="drawing_zone" type="Control" parent="."]
 unique_name_in_owner = true
@@ -249,4 +282,5 @@ offset_right = 952.0
 offset_bottom = 566.0
 text = "123"
 
+[connection signal="button_down" from="exit_level" to="." method="_on_exit_level_button_down"]
 [connection signal="mouse_entered" from="Area2D" to="drawing_zone" method="_on_area_2d_mouse_entered"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://80g34o1el0uh"]
+[gd_scene load_steps=4 format=3 uid="uid://80g34o1el0uh"]
 
 [ext_resource type="Script" path="res://level_choice/level_choice.gd" id="1_csvft"]
 [ext_resource type="Texture2D" uid="uid://24hwjwscr1sn" path="res://option menu/5454080627780478831 (1).jpg" id="1_lmgmd"]
+[ext_resource type="PackedScene" uid="uid://pkcd302nwjj8" path="res://choice/choice.tscn" id="3_sg28s"]
 
 [node name="level_choice" type="Control"]
 layout_mode = 3
@@ -21,7 +22,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_lmgmd")
 
-[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -33,44 +34,17 @@ theme_override_constants/margin_top = 24
 theme_override_constants/margin_right = 24
 theme_override_constants/margin_bottom = 24
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
+[node name="choiceTab" parent="MarginContainer/VBoxContainer" instance=ExtResource("3_sg28s")]
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_font_sizes/font_size = 64
-text = "ВЫБЕРИТЕ ИГРОВОЙ КЕЙС"
+size_flags_vertical = 3
 
-[node name="HSeparator" type="HSeparator" parent="TextureRect/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 128
-
-[node name="1_level" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(300, 150)
+[node name="exit" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 24
-text = "ВВОДНЫЙ УРОК"
-
-[node name="HSeparator2" type="HSeparator" parent="TextureRect/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 128
-
-[node name="2_level" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(300, 150)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 24
-text = "Т1 И Т2 РАЗРЕШЕНИЕ"
-
-[node name="HSeparator3" type="HSeparator" parent="TextureRect/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 128
-
-[node name="exit" type="Button" parent="TextureRect/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(300, 150)
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_font_sizes/font_size = 24
-text = "НАЗАД"
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 36
+text = "В МЕНЮ"

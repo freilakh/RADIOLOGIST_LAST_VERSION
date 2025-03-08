@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwpyxp1h1u6bq"]
+
+[ext_resource type="Texture2D" uid="uid://24hwjwscr1sn" path="res://option menu/5454080627780478831 (1).jpg" id="1_drup7"]
+
+[node name="about_us" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 1970.0
+offset_bottom = 1070.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_drup7")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label1" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "ПРО НАС"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="MarginContainer"]
+custom_minimum_size = Vector2(350, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 42
+text = "ВЫХОД"

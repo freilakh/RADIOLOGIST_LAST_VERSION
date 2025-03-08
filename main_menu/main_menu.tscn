@@ -73,12 +73,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "НАСТРОЙКИ"
 
-[node name="learning" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(350, 100)
-layout_mode = 2
-theme_override_font_sizes/font_size = 42
-text = "ТЕОРИЯ"
-
 [node name="exit_button" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 custom_minimum_size = Vector2(350, 100)
 layout_mode = 2
