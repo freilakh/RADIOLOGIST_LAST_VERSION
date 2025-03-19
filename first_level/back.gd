@@ -3,4 +3,4 @@ extends Button
 
 
 func _pressed():
-	description.current_index += 1
+	description.current_index -= 1

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dcs2kd44lteax"]
+[gd_scene load_steps=27 format=3 uid="uid://dcs2kd44lteax"]
 
 [ext_resource type="Texture2D" uid="uid://dawvgpxf3cjov" path="res://first_level/5224721342585235115.jpg" id="1_4frlr"]
 [ext_resource type="Script" path="res://first_level/first_level.gd" id="1_g1d70"]
@@ -24,10 +24,8 @@
 [ext_resource type="Script" path="res://first_level/next.gd" id="16_f7hco"]
 [ext_resource type="Texture2D" uid="uid://dll5jj6sd1svs" path="res://first_level/Без названия39_20250221124939.png" id="16_fhit1"]
 [ext_resource type="Texture2D" uid="uid://n8q3gl2hpr7u" path="res://first_level/Без названия39_20250221131908.png" id="17_8ugt2"]
-[ext_resource type="Script" path="res://first_level/2_1.gd" id="19_053ms"]
+[ext_resource type="Script" path="res://first_level/back.gd" id="19_a7215"]
 [ext_resource type="Script" path="res://first_level/correct_or_mine.gd" id="20_b64km"]
-[ext_resource type="Script" path="res://first_level/2_2.gd" id="20_uc8i8"]
-[ext_resource type="Script" path="res://first_level/2_3.gd" id="21_i60hc"]
 
 [node name="first_level" type="Control"]
 layout_mode = 3
@@ -170,7 +168,6 @@ text = "Начать"
 script = ExtResource("15_gnnls")
 
 [node name="1 test box" type="VBoxContainer" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.07
@@ -215,65 +212,6 @@ layout_mode = 2
 text = "Кукурузная"
 script = ExtResource("15_qn6qe")
 
-[node name="2 test box" type="VBoxContainer" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-visible = false
-layout_mode = 2
-offset_left = 84.0
-offset_top = 303.0
-offset_right = 321.0
-offset_bottom = 459.0
-
-[node name="2 Question" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/2 test box"]
-layout_mode = 2
-text = "Из какого мяса котлета?
-
-"
-
-[node name="2_1" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/2 test box"]
-layout_mode = 2
-text = "Свинина"
-script = ExtResource("19_053ms")
-
-[node name="2_2" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/2 test box"]
-layout_mode = 2
-text = "Говядина"
-script = ExtResource("20_uc8i8")
-
-[node name="2_3" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/2 test box"]
-layout_mode = 2
-text = "Индейка"
-script = ExtResource("21_i60hc")
-
-[node name="3 test box" type="VBoxContainer" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-visible = false
-layout_mode = 2
-offset_left = 84.0
-offset_top = 303.0
-offset_right = 321.0
-offset_bottom = 459.0
-
-[node name="3 Question" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/3 test box"]
-layout_mode = 2
-text = "Какой будет соус?
-
-"
-
-[node name="3_1" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/3 test box"]
-layout_mode = 2
-text = "Кетчуп"
-
-[node name="3_2" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/3 test box"]
-layout_mode = 2
-text = "Барбекю"
-
-[node name="3_3" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/3 test box"]
-layout_mode = 2
-text = "Горчица"
-
-[node name="TextEdit" type="TextEdit" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/3 test box"]
-visible = false
-layout_mode = 2
-
 [node name="Back" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
 visible = false
 layout_mode = 0
@@ -282,6 +220,7 @@ offset_top = 474.0
 offset_right = 133.0
 offset_bottom = 526.0
 text = "Назад"
+script = ExtResource("19_a7215")
 
 [node name="Next" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
 visible = false
@@ -300,11 +239,19 @@ texture = ExtResource("15_5loxi")
 
 [node name="descr_list" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
 layout_mode = 0
-offset_left = 425.0
-offset_top = 156.0
-offset_right = 672.0
-offset_bottom = 367.0
-text = "бургеркинг говно"
+offset_left = 463.0
+offset_top = 158.0
+offset_right = 710.0
+offset_bottom = 369.0
+text = "здесь описание"
+
+[node name="finish" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 560.0
+offset_right = 284.0
+offset_bottom = 626.0
+text = "Завершить"
 
 [node name="верхняя_панель" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 position = Vector2(990.5, 541.5)
