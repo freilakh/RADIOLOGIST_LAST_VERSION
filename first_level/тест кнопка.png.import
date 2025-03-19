@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ye07m14wig8e"
-path="res://.godot/imported/Без названия39_20241025223214.png-d9e05ef3f9ae622ec34d096f3d55f744.ctex"
+uid="uid://dpb2qyoymefv8"
+path="res://.godot/imported/тест кнопка.png-6034a9eea0b7c72f0c1b92f937007675.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://first_level/Без названия39_20241025223214.png"
-dest_files=["res://.godot/imported/Без названия39_20241025223214.png-d9e05ef3f9ae622ec34d096f3d55f744.ctex"]
+source_file="res://first_level/тест кнопка.png"
+dest_files=["res://.godot/imported/тест кнопка.png-6034a9eea0b7c72f0c1b92f937007675.ctex"]
 
 [params]
 

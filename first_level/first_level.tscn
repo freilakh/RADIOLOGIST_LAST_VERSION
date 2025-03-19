@@ -1,12 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://dcs2kd44lteax"]
+
 
 [ext_resource type="Texture2D" uid="uid://dawvgpxf3cjov" path="res://first_level/5224721342585235115.jpg" id="1_4frlr"]
 [ext_resource type="Script" path="res://first_level/first_level.gd" id="1_g1d70"]
 [ext_resource type="Script" path="res://first_level/drawing_zone.gd" id="2_qn03v"]
-[ext_resource type="Texture2D" uid="uid://eaiy5i8hdhcc" path="res://first_level/5224721342585235249.jpg" id="2_tlrn8"]
-[ext_resource type="Texture2D" uid="uid://cs6cnxfreui0f" path="res://first_level/Без названия39_20241009154024 (1).png" id="3_4vddj"]
-[ext_resource type="Texture2D" uid="uid://dewcsf8csqm75" path="res://first_level/IMG_1870.PNG" id="4_dmul0"]
-[ext_resource type="Texture2D" uid="uid://ye07m14wig8e" path="res://first_level/Без названия39_20241025223214.png" id="6_3ncdp"]
+
 [ext_resource type="Script" path="res://first_level/медуза.gd" id="9_adp38"]
 [ext_resource type="Texture2D" uid="uid://bs88by3x86cvj" path="res://first_level/третье сообщение.png" id="10_7b7jb"]
 [ext_resource type="Script" path="res://first_level/clear_draw.gd" id="10_bfn0p"]
@@ -14,11 +11,17 @@
 [ext_resource type="Script" path="res://first_level/check_draw.gd" id="11_ujr4v"]
 [ext_resource type="Texture2D" uid="uid://b7gwo4q6vr1et" path="res://first_level/первое сообщение.png" id="12_2kuq8"]
 [ext_resource type="AudioStream" uid="uid://bm3y66gm5ridl" path="res://first_level/Sound-1.ogg" id="13_0wj51"]
+[ext_resource type="Script" path="res://first_level/1_1.gd" id="13_4a13d"]
+[ext_resource type="Script" path="res://first_level/1_2.gd" id="14_587ob"]
+[ext_resource type="Script" path="res://first_level/описание.gd" id="14_ctn4l"]
 [ext_resource type="AudioStream" uid="uid://devavidb7o3kk" path="res://first_level/Sound 2.mp3" id="14_dp0e1"]
+[ext_resource type="Texture2D" uid="uid://wus5j4chf1rt" path="res://first_level/lock.png" id="15_5loxi"]
 [ext_resource type="AudioStream" uid="uid://gxrbqampju0p" path="res://first_level/Sound 3.mp3" id="15_15v6w"]
-[ext_resource type="Texture2D" uid="uid://ce8ui3eby1un" path="res://first_level/frontal-meningioma-1.png" id="16_8wjf4"]
+
 [ext_resource type="Texture2D" uid="uid://dll5jj6sd1svs" path="res://first_level/Без названия39_20250221124939.png" id="16_fhit1"]
 [ext_resource type="Texture2D" uid="uid://n8q3gl2hpr7u" path="res://first_level/Без названия39_20250221131908.png" id="17_8ugt2"]
+[ext_resource type="Script" path="res://first_level/back.gd" id="19_a7215"]
+[ext_resource type="Script" path="res://first_level/correct_or_mine.gd" id="20_b64km"]
 
 [node name="first_level" type="Control"]
 layout_mode = 3
@@ -57,32 +60,14 @@ theme_override_constants/separation = 30
 [node name="PanelContainer" type="PanelContainer" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 layout_mode = 2
 
-[node name="нижняя панель" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/PanelContainer"]
-position = Vector2(989, 1039)
-scale = Vector2(2.98303, 1.75943)
-texture = ExtResource("2_tlrn8")
-
-[node name="значок_радиации" type="TextureButton" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/PanelContainer/нижняя панель"]
-anchors_preset = -1
-anchor_top = 0.92
-anchor_right = 0.083
-anchor_bottom = 1.0
-offset_left = -329.0
-offset_top = -74.76
-offset_right = -337.029
-offset_bottom = -35.0
-texture_normal = ExtResource("3_4vddj")
-texture_pressed = ExtResource("6_3ncdp")
-ignore_texture_size = true
-stretch_mode = 0
 
 [node name="Control" type="Control" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 layout_mode = 2
 
 [node name="медуза" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/Control"]
-position = Vector2(691, 693)
-scale = Vector2(0.314941, 0.35141)
-texture = ExtResource("4_dmul0")
+position = Vector2(618, 641)
+scale = Vector2(0.204346, 0.213303)
+texture = ExtResource("3_fuciw")
 script = ExtResource("9_adp38")
 
 [node name="Message 3" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/Control"]
@@ -143,7 +128,7 @@ tabs_rearrange_group = 0
 scroll_to_selected = false
 metadata/_tab_index = 0
 
-[node name="information" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/пациент"]
+
 layout_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -163,38 +148,12 @@ text = "  ПОЛ: МУЖСКОЙ
   НАЛИЧИЕ ВРЕДНЫХ 
   ПРИВЫЧЕК: НЕТ"
 
-[node name="описание" type="TabBar" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer"]
+[node name="description" type="TabBar" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer"]
+custom_minimum_size = Vector2(0, 970)
 layout_mode = 2
+script = ExtResource("14_ctn4l")
 metadata/_tab_index = 1
 
-[node name="menu" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/описание"]
-custom_minimum_size = Vector2(0, 75)
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -8.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 30
-text = "МЕНЮ"
-
-[node name="pause" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/описание"]
-custom_minimum_size = Vector2(0, 75)
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = -161.0
-offset_right = 1.0
-offset_bottom = -86.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 30
-text = "ПАУЗА"
 
 [node name="верхняя_панель" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 position = Vector2(990.5, 541.5)
@@ -216,23 +175,7 @@ texture_normal = ExtResource("17_8ugt2")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="ввод_ответа" type="LineEdit" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.091
-anchor_top = 0.919
-anchor_right = 0.473
-anchor_bottom = 0.998
-offset_left = -0.179993
-offset_top = 0.47998
-offset_right = 9.46002
-offset_bottom = 4.15991
-theme_override_font_sizes/font_size = 42
-placeholder_text = "введи ответ"
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
 position = Vector2(1158, 128)
 scale = Vector2(1.39453, 1.50977)
 texture = ExtResource("16_8wjf4")

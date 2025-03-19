@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cvxxfhmif533h"
-path="res://.godot/imported/танк.png-ebba1c418859afbcdb152cf5e4ccca3d.ctex"
+uid="uid://wus5j4chf1rt"
+path="res://.godot/imported/lock.png-ba2ad73ecbb3821ec0b625c71094b8d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://first_level/танк.png"
-dest_files=["res://.godot/imported/танк.png-ebba1c418859afbcdb152cf5e4ccca3d.ctex"]
+source_file="res://first_level/lock.png"
+dest_files=["res://.godot/imported/lock.png-ba2ad73ecbb3821ec0b625c71094b8d8.ctex"]
 
 [params]
 
