@@ -1,9 +1,9 @@
-[gd_scene load_steps=27 format=3 uid="uid://dcs2kd44lteax"]
+
 
 [ext_resource type="Texture2D" uid="uid://dawvgpxf3cjov" path="res://first_level/5224721342585235115.jpg" id="1_4frlr"]
 [ext_resource type="Script" path="res://first_level/first_level.gd" id="1_g1d70"]
 [ext_resource type="Script" path="res://first_level/drawing_zone.gd" id="2_qn03v"]
-[ext_resource type="Texture2D" uid="uid://chwroaem8we80" path="res://first_level/Дефолт .png" id="3_fuciw"]
+
 [ext_resource type="Script" path="res://first_level/медуза.gd" id="9_adp38"]
 [ext_resource type="Texture2D" uid="uid://bs88by3x86cvj" path="res://first_level/третье сообщение.png" id="10_7b7jb"]
 [ext_resource type="Script" path="res://first_level/clear_draw.gd" id="10_bfn0p"]
@@ -17,11 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://devavidb7o3kk" path="res://first_level/Sound 2.mp3" id="14_dp0e1"]
 [ext_resource type="Texture2D" uid="uid://wus5j4chf1rt" path="res://first_level/lock.png" id="15_5loxi"]
 [ext_resource type="AudioStream" uid="uid://gxrbqampju0p" path="res://first_level/Sound 3.mp3" id="15_15v6w"]
-[ext_resource type="Script" path="res://first_level/start_test.gd" id="15_gnnls"]
-[ext_resource type="Script" path="res://first_level/1_3.gd" id="15_qn6qe"]
-[ext_resource type="Texture2D" uid="uid://ce8ui3eby1un" path="res://first_level/frontal-meningioma-1.png" id="16_8wjf4"]
-[ext_resource type="Texture2D" uid="uid://c5frmo8yhsin1" path="res://first_level/correct_answer.jpg" id="16_82ek3"]
-[ext_resource type="Script" path="res://first_level/next.gd" id="16_f7hco"]
+
 [ext_resource type="Texture2D" uid="uid://dll5jj6sd1svs" path="res://first_level/Без названия39_20250221124939.png" id="16_fhit1"]
 [ext_resource type="Texture2D" uid="uid://n8q3gl2hpr7u" path="res://first_level/Без названия39_20250221131908.png" id="17_8ugt2"]
 [ext_resource type="Script" path="res://first_level/back.gd" id="19_a7215"]
@@ -63,6 +59,7 @@ theme_override_constants/separation = 30
 
 [node name="PanelContainer" type="PanelContainer" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 layout_mode = 2
+
 
 [node name="Control" type="Control" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 layout_mode = 2
@@ -131,7 +128,7 @@ tabs_rearrange_group = 0
 scroll_to_selected = false
 metadata/_tab_index = 0
 
-[node name="information" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/пациент"]
+
 layout_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -157,101 +154,6 @@ layout_mode = 2
 script = ExtResource("14_ctn4l")
 metadata/_tab_index = 1
 
-[node name="Start test" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-visible = false
-layout_mode = 0
-offset_left = 88.0
-offset_top = 174.0
-offset_right = 307.0
-offset_bottom = 239.0
-text = "Начать"
-script = ExtResource("15_gnnls")
-
-[node name="1 test box" type="VBoxContainer" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.07
-anchor_top = -0.201586
-anchor_right = 0.0425
-anchor_bottom = -0.011325
-offset_left = 81.0
-offset_top = 308.0
-offset_right = 318.0
-offset_bottom = 474.0
-metadata/_edit_use_anchors_ = true
-
-[node name="1 Question" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/1 test box"]
-layout_mode = 2
-text = "Какая булочка?
-
-"
-
-[node name="1_1" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/1 test box"]
-custom_minimum_size = Vector2(0, 75)
-layout_mode = 2
-text = "Кунжутная"
-script = ExtResource("13_4a13d")
-
-[node name="HSeparator" type="HSeparator" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/1 test box"]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="1_2" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/1 test box"]
-custom_minimum_size = Vector2(0, 75)
-layout_mode = 2
-text = "Бородинская"
-script = ExtResource("14_587ob")
-
-[node name="HSeparator2" type="HSeparator" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/1 test box"]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="1_3" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description/1 test box"]
-custom_minimum_size = Vector2(0, 75)
-layout_mode = 2
-text = "Кукурузная"
-script = ExtResource("15_qn6qe")
-
-[node name="Back" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-visible = false
-layout_mode = 0
-offset_left = 61.0
-offset_top = 474.0
-offset_right = 133.0
-offset_bottom = 526.0
-text = "Назад"
-script = ExtResource("19_a7215")
-
-[node name="Next" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-visible = false
-layout_mode = 0
-offset_left = 221.0
-offset_top = 477.0
-offset_right = 329.0
-offset_bottom = 532.0
-text = "Дальше"
-script = ExtResource("16_f7hco")
-
-[node name="lock" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-position = Vector2(202, 350)
-scale = Vector2(0.344238, 0.272461)
-texture = ExtResource("15_5loxi")
-
-[node name="descr_list" type="Label" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-layout_mode = 0
-offset_left = 463.0
-offset_top = 158.0
-offset_right = 710.0
-offset_bottom = 369.0
-text = "здесь описание"
-
-[node name="finish" type="Button" parent="отступ_на_1_пиксель_от_границы/VBoxContainer/TabContainer/description"]
-layout_mode = 0
-offset_left = 112.0
-offset_top = 560.0
-offset_right = 284.0
-offset_bottom = 626.0
-text = "Завершить"
 
 [node name="верхняя_панель" type="Sprite2D" parent="отступ_на_1_пиксель_от_границы/VBoxContainer"]
 position = Vector2(990.5, 541.5)
@@ -273,14 +175,7 @@ texture_normal = ExtResource("17_8ugt2")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Area2D" type="Area2D" parent="."]
 
-[node name="correct_answer" type="Sprite2D" parent="Area2D"]
-position = Vector2(1514.5, 512.5)
-scale = Vector2(0.536898, 0.535319)
-texture = ExtResource("16_82ek3")
-
-[node name="mine_answer" type="Sprite2D" parent="Area2D"]
 position = Vector2(1158, 128)
 scale = Vector2(1.39453, 1.50977)
 texture = ExtResource("16_8wjf4")
@@ -329,16 +224,6 @@ offset_top = 405.0
 offset_right = 952.0
 offset_bottom = 566.0
 text = "123"
-
-[node name="correct or mine" type="Button" parent="."]
-layout_mode = 0
-offset_left = 985.0
-offset_top = 676.0
-offset_right = 1118.0
-offset_bottom = 780.0
-text = "Правильный
-ответ"
-script = ExtResource("20_b64km")
 
 [connection signal="button_down" from="exit_level" to="." method="_on_exit_level_button_down"]
 [connection signal="mouse_entered" from="Area2D" to="drawing_zone" method="_on_area_2d_mouse_entered"]
